@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^(9053903\.com)(:80)? [NC]
+RewriteRule ^(.*) http://www.9053903.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/index.php [L,QSA]
+</IfModule>

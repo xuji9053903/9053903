@@ -1,0 +1,17 @@
+<div id="footer_wrap">
+    <div id="footer">
+        <div class="footer_navi">
+            <ul class="menu">
+                {volist name="recBottom" id="cate"}
+                <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156">
+                    <a href="/index/{if condition="$cate['type'] eq 1"}artlist{elseif condition="$cate['type'] eq 3" /}imglist{else /}page{/if}/index/cateid/{$cate.id}" target="_blank">{$cate.catename}</a></li>
+                {/volist}
+         
+            </ul>
+        </div>
+        <div class="footer_info">
+            <span class="legal">版权所有©2017 xuji9053903   <a href="http://www.miitbeian.gov.cn">苏ICP备16043336号-1</a>&#160;&#160;&#160;
+            <span><a href="tencent://message/?uin=9053903">点击联系QQ</a></span>
+        </div>
+    </div>
+</div>
